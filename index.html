@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go'zal Flowers House| Gul do‘koni</title>
+    <!-- index.html ichida -->
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigatsiya -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">🌷 Go'zal Flowers House</a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Bosh sahifa</a>
+                <a href="#catalog">Gullar</a>
+                <a href="#about">Biz haqimizda</a>
+                <a href="#contact">Aloqa</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="favoritesBtn" aria-label="Sevimlilar">
+                    ♡ <span id="favoritesCount">0</span>
+                </button>
+                <button class="icon-btn" id="cartBtn" aria-label="Savat">
+                    🛒 <span id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bosh sahifa -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Har bir gulda mehr bor</p>
+                    <h1>Gullar bilan <span>hislaringizni</span> ifoda eting</h1>
+                    <p>
+                        Yaqinlaringizga quvonch ulashing. Go'zal Flowers Houseda har bir
+                        guldasta mehr va nafislik bilan tayyorlanadi.
+                    </p>
+                    <a href="#catalog" class="btn btn-primary">Guldastalarni ko‘rish</a>
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="do'kon rasmi/image.png"
+                        alt="Chiroyli guldasta"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Afzalliklar -->
+        <section class="benefits">
+            <div class="container benefits-grid">
+                <article class="benefit">
+                    <span>🌸</span>
+                    <h3>Yangi gullar</h3>
+                    <p>Har kuni yangi va saralangan gullar</p>
+                </article>
+
+                <article class="benefit">
+                    <span>🚚</span>
+                    <h3>Tez yetkazish</h3>
+                    <p>Guldastangizni manzilingizga yetkazamiz</p>
+                </article>
+
+                <article class="benefit">
+                    <span>💝</span>
+                    <h3>Mehr bilan</h3>
+                    <p>Har bir buyurtma alohida e’tibor bilan tayyorlanadi</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Katalog -->
+        <section class="catalog section" id="catalog">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Bizning kolleksiyamiz</p>
+                    <h2>Sevimli guldastangizni tanlang</h2>
+                    <p>Har qanday lahza uchun nafis gullar</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Barchasi</button>
+                    <button class="filter-btn" data-filter="rose">Atirgullar</button>
+                    <button class="filter-btn" data-filter="tulip">Lolalar</button>
+                    <button class="filter-btn" data-filter="bouquet">Guldastalar</button>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card" data-category="rose">
+                        <div class="product-image">
+                            <img src="rasmm/atirgul rasmi/image.png" alt="Qizil atirgullar">
+                            <button class="favorite-btn" aria-label="Sevimlilarga qo‘shish">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Qizil atirgullar</h3>
+                            <p class="product-description">12 dona nafis atirgul</p>
+                            <div class="product-bottom">
+                                <span class="price">700 000 so‘m</span>
+                                <button class="add-to-cart" data-name="Qizil atirgullar" data-price="250000">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tulip">
+                        <div class="product-image">
+                            <img src="lola gul rasmi/image.png">
+                            <button class="favorite-btn" aria-label="Sevimlilarga qo‘shish">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bahor lolalari</h3>
+                            <p class="product-description">15 dona lola</p>
+                            <div class="product-bottom">
+                                <span class="price">1 000 000 so‘m</span>
+                                <button class="add-to-cart" data-name="Bahor lolalari" data-price="180000">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="bouquet">
+                        <div class="product-image">
+                            <img src="guldasta/image.png" alt="Aralash guldasta">
+                            <button class="favorite-btn" aria-label="Sevimlilarga qo‘shish">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mehr guldastasi</h3>
+                            <p class="product-description">Turli gullardan nafis kompozitsiya</p>
+                            <div class="product-bottom">
+                                <span class="price">600 000 so‘m</span>
+                                <button class="add-to-cart" data-name="Mehr guldastasi" data-price="320000">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="rose">
+                        <div class="product-image">
+                            <img src="pion/image.png" alt="Pion gullari">
+                            <button class="favorite-btn" aria-label="Sevimlilarga qo‘shish">♡</button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pion gullari</h3>
+                            <p class="product-description">10 dona pion gullari</p>
+                            <div class="product-bottom">
+                                <span class="price">500 000 so‘m</span>
+                                <button class="add-to-cart" data-name="Pion gullari" data-price="210000">+</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biz haqimizda -->
+        <section class="about section" id="about">
+            <div class="container about-content">
+                <div class="about-image">
+                    <img
+                        src="gozalim/image.png"
+                        alt="Gullar bilan bezatilgan do‘kon"
+                    >
+                </div>
+
+                <div class="about-text">
+                    <p class="eyebrow">Go'zal Flowers House haqida</p>
+                    <h2>Gullar orqali mehr ulashamiz</h2>
+                    <p>
+                        Go'zal Flowers House— go‘zallik, nafislik va samimiyatni birlashtirgan
+                        gul do‘koni. Biz har bir guldastani alohida mehr bilan
+                        tayyorlab, sizning quvonchingizga sherik bo‘lamiz.
+                    </p>
+                    <a href="#contact" class="btn btn-secondary">Biz bilan bog‘lanish</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Iqtibos -->
+        <section class="quote-section">
+            <div class="container">
+                <p>“Gul — aytilmagan tuyg‘ularning eng go‘zal ifodasi.”</p>
+                <span>Go'zal Flower House</span>
+            </div>
+        </section>
+
+        <!-- Aloqa -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Biz bilan bog‘laning</p>
+                    <h2>Buyurtma berishga tayyormisiz?</h2>
+                    <p>Savollaringiz bo‘lsa, biz bilan bog‘laning.</p>
+                </div>
+
+                <div class="contact-details">
+                    <p>📞 Telefon: +998 94 019 06 34</p>
+                    <p>📍 Manzil: Samarqand shahar</p>
+                    <p>✉️ Email: @bidikovagozal.uz</p>
+                </div>
+
+                <a href="https://t.me/" class="btn btn-primary" target="_blank" rel="noopener">
+                    Telegram orqali yozish
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">🌷 Go'zal Flowers House</a>
+            <p>© 2026 Go'zal Flowers House. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
